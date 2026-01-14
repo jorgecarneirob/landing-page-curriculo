@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jorge Carneiro | Especialista em TI & Professor</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-blue: #0A192F; /* Marinho Tech */
+            --secondary-blue: #112240;
+            --accent-blue: #00D2FF; /* Azul Brilhante */
+            --text-white: #E6F1FF;
+            --text-gray: #8892B0;
+            --bg-white: #FFFFFF;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: var(--bg-white);
+            color: var(--primary-blue);
+            line-height: 1.6;
+        }
+
+        /* Header & Nav */
+        header {
+            background-color: var(--primary-blue);
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+
+        nav {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+
+        nav a {
+            color: var(--text-white);
+            text-decoration: none;
+            margin-left: 1.5rem;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        nav a:hover { color: var(--accent-blue); }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, #172A45 100%);
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--text-white);
+            padding-top: 60px;
+        }
+
+        .hero h1 { font-size: 3.5rem; margin-bottom: 0.5rem; }
+        .hero p { font-size: 1.2rem; color: var(--accent-blue); max-width: 700px; }
+
+        /* Container Principal */
+        .container { max-width: 1000px; margin: 4rem auto; padding: 0 2rem; }
+
+        h2 {
+            border-left: 5px solid var(--accent-blue);
+            padding-left: 1rem;
+            color: var(--primary-blue);
+            margin-bottom: 2rem;
+        }
+
+        /* Experiência */
+        .experience-item {
+            background: #F8FAFF;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid var(--primary-blue);
+        }
+
+        .date { font-weight: bold; color: var(--accent-blue); }
+
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .skill-card {
+            background: var(--primary-blue);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .skill-card:hover { transform: translateY(-5px); background: var(--secondary-blue); }
+        .skill-card i { font-size: 2rem; color: var(--accent-blue); margin-bottom: 1rem; }
+
+        /* Certificações */
+        .cert-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .cert-tag {
+            background: #E1E8F5;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            border: 1px solid #CBD5E1;
+        }
+
+        footer {
+            background: var(--primary-blue);
+            color: var(--text-white);
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 4rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            nav { display: none; } /* Simplificação para mobile */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <div style="font-weight: bold; font-size: 1.2rem; color: var(--accent-blue);">JC</div>
+        <div>
+            <a href="#sobre">Sobre</a>
+            <a href="#experiencia">Experiência</a>
+            <a href="#skills">Habilidades</a>
+            <a href="#certificacoes">Certificados</a>
+        </div>
+    </nav>
+</header>
+
+<section class="hero">
+    <div>
+        <h1>Jorge Carneiro</h1>
+        <p>Analista em Segurança da Informação | Professor de Desenvolvimento de Sistemas | Orientador Digital no SESI</p>
+        <div style="margin-top: 2rem;">
+            <a href="mailto:jorgecarneiroconsultoria@gmail.com" style="background: var(--accent-blue); color: var(--primary-blue); padding: 12px 25px; border-radius: 5px; text-decoration: none; font-weight: bold;">Fale Comigo</a>
+        </div>
+    </div>
+</section>
+
+<div class="container" id="sobre">
+    <h2>Sobre Mim</h2>
+    <p>Profissional de TI com 8 anos de experiência em automação e infraestrutura. Atualmente focado na área educacional como Orientador Digital no SESI Sumaré, unindo conhecimentos técnicos avançados com didática para formação de novos talentos.</p>
+</div>
+
+<div class="container" id="experiencia">
+    <h2>Experiência Profissional</h2>
+    
+    <div class="experience-item">
+        <span class="date">2024 - Atual</span>
+        <h3>SESI Sumaré - Orientador Educacional Digital</h3>
+        <p>Instrutor de Robótica e gerenciamento do setor de tecnologia.</p>
+    </div>
+
+    <div class="experience-item">
+        <span class="date">2020 - 2023</span>
+        <h3>Arius Sistemas - Suporte Técnico e Implantação</h3>
+        <p>Foco em sistemas ERP, hardware e software de frente de loja.</p>
+    </div>
+
+    <div class="experience-item">
+        <span class="date">2018 - 2020</span>
+        <h3>People Tech and English - Instrutor de Tecnologia</h3>
+        <p>Ensino de programação, Linux, Redes e Segurança da Informação.</p>
+    </div>
+</div>
+
+<div class="container" id="skills">
+    <h2>Habilidades Técnicas</h2>
+    <div class="skills-grid">
+        <div class="skill-card">
+            <i class="fas fa-shield-alt"></i>
+            <h3>Segurança</h3>
+            <p>Forense Computacional e Defesa de Redes.</p>
+        </div>
+        <div class="skill-card">
+            <i class="fas fa-code"></i>
+            <h3>Desenvolvimento</h3>
+            <p>Lógica, C, C++, PHP e Algoritmos.</p>
+        </div>
+        <div class="skill-card">
+            <i class="fas fa-network-wired"></i>
+            <h3>Infraestrutura</h3>
+            <p>Linux, Windows Server e Virtualização.</p>
+        </div>
+        <div class="skill-card">
+            <i class="fas fa-robot"></i>
+            <h3>Educação 4.0</h3>
+            <p>Robótica, Arduino e IA Generativa.</p>
+        </div>
+    </div>
+</div>
+
+<div class="container" id="certificacoes">
+    <h2>Certificações SENAI & Relevantes</h2>
+    <div class="cert-list">
+        <span class="cert-tag">Lógica de Programação - SENAI</span>
+        <span class="cert-tag">Ética na IA - SENAI</span>
+        <span class="cert-tag">Desvendando a Blockchain - SENAI</span>
+        <span class="cert-tag">Desvendando o 5G - SENAI</span>
+        <span class="cert-tag">Arduino - Centro Paulo Souza</span>
+        <span class="cert-tag">Cisco Network Technician</span>
+        <span class="cert-tag">Microsoft Innovative Educator</span>
+    </div>
+</div>
+
+<footer>
+    <p>Jorge Carneiro | Nova Odessa - SP | (19) 9.8264-3323</p>
+    <p style="font-size: 0.8rem; opacity: 0.7;">&copy; 2026 Desenvolvido com foco em Educação e Tecnologia.</p>
+</footer>
+
+</body>
+</html>
